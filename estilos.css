@@ -50,3 +50,33 @@ section { padding: 40px 20px; max-width: 1000px; margin: auto; }
   .imagen-redonda { width: 250px; height: 250px; }
   .contenedor-cafe { gap: 20px; }
 }
+/* BOTONCITOS PARA QUE SE IDENTIFIQUE CADA UNO */
+nav{
+  background: #ffffff !important;
+  padding: 10px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  justify-content: center;
+}
+
+nav a{
+  background: #f5f0e8 !important;
+  border: 1px solid #d7c4a5 !important;
+  padding: 6px 12px !important;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+  color: #3E2723 !important;
+  display: inline-block !important;
+  margin: 2px !important;
+}
+
+nav a::before{
+  content: "☕ ";
+}
+
+nav a:hover{
+  background: #7bb342 !important;
+  color: white !important;
+  border-color: #7bb342 !important;
+}
