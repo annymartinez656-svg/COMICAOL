@@ -71,8 +71,11 @@ nav a{
   margin: 2px !important;
 }
 
-nav a::before{
-  content: "☕";
+nav a::before{ 
+  content:"• "; 
+  color:#7bb342; 
+  font-weight:bold; 
+  font-size:16px;
 }
 
 nav a:hover{
