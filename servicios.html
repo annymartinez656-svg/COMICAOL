@@ -80,49 +80,24 @@ body{font-family:'Poppins',sans-serif;background:#fdf8f0;padding:15px}
   padding:5px;
   background:#f9f9f3;
 }
-	/* === SOLO BOMBAS Y FINANCIAMIENTOS === */
-.titulo-seccion{
-  font-weight: 900;
-  font-size: 28px;
-  margin: 25px 15px 10px 15px;
-  text-transform: uppercase;
-}
-
-.lista-bombas{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  padding: 0 10px;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.card-bomba{
-  width: 165px;
-  background: #fff;
-  border: 1.8px solid #222;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.card-bomba img{
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 1.5px solid #222;
-  background: #f5f5f5;
-}
-
-.card-bomba b{
-  display: block;
-  margin: 8px 0 6px 0;
-  font-size: 16px;
-}
-
+	/* --- BOMBAS Y FINANCIAMIENTOS --- */
+  .lista-bombas{
+    display:flex; flex-wrap:wrap; gap:12px;
+    justify-content:center; padding:0 12px;
+  }
+  .card-bomba{
+    width:165px; background:#fff; border:1.8px solid #222;
+    border-radius:20px; padding:10px; text-align:center;
+    box-sizing:border-box;
+  }
+  .card-bomba img{
+    width:100%; height:110px; object-fit:cover;
+    border-radius:14px; border:1.5px solid #222;
+    background:#f5f5f5;
+  }
+  .card-bomba b{
+    display:block; margin:8px 0 8px 0; font-size:16px;
+  }
 
 </style>
 </head>
@@ -166,50 +141,48 @@ body{font-family:'Poppins',sans-serif;background:#fdf8f0;padding:15px}
     </div>
     <div class="proceso-item">
       <div class="foto"><img src="imagenempaquetado.jpeg"></div>
-      <div class="nombre">Empaquetado</div>
+      <div class="nombre">Empaquetado</div><br>
     </div>
   </div>
-</div><br>
+</div>
 
-<section class="seccion-cafe" id="tipos">
-  <h1>ARQUILER DE BOMBAS</h1>
+<h2>ARQUILER DE BOMBAS</h2>
+<div class="lista-bombas">
+  <div class="card-bomba">
+    <img src="cereza.jpg" alt="Café Cereza">
+    <b>Cereza</b>
+    <a class="btn-contacto" href="tel:+50493830959">9383-0959</a>
+  </div>
+  <div class="card-bomba">
+    <img src="lavado.jpg" alt="Café Lavado">
+    <b>Lavado</b>
+    <a class="btn-contacto" href="tel:+50493830959">9383-0959</a>
+  </div>
+  <div class="card-bomba">
+    <img src="pergamino.jpg" alt="Pergamino Seco">
+    <b>Pergamino Seco</b>
+    <a class="btn-contacto" href="tel:+50493830959">9383-0959</a>
+  </div>
+</div>
 
-  <div class="contenedor-tarjetas">
-
-    <div class="tarjeta">
-      <img src="maquinasmuchomas.jpeg" alt="Café Cereza">
-      <h3></h3>
-    </div>
-
-    <div class="tarjeta">
-      <img src="" alt="Café Lavado">
-      <h3>Lavado</h3>
-    </div>
-
-    <div class="tarjeta">
-      <img src="" alt="Pergamino Seco">
-      <h3>Pergamino Seco</h3>
-    </div>
-
-		<section class="seccion-cafe" id="tipos">
-  <h1>FINANCIAMIENTOS</h1>
-
-  <div class="contenedor-tarjetas">
-
-    <div class="tarjeta">
-      <img src="" alt="Café Cereza">
-      <h3>Cereza</h3>
-    </div>
-
-    <div class="tarjeta">
-      <img src="" alt="Café Lavado">
-      <h3>Lavado</h3>
-    </div>
-
-    <div class="tarjeta">
-      <img src="" alt="Pergamino Seco">
-      <h3>Pergamino Seco</h3>
-    </div>
+<h2>FINANCIAMIENTOS</h2>
+<div class="lista-bombas">
+  <div class="card-bomba">
+    <img src="cereza.jpg" alt="Café Cereza">
+    <b>Cereza</b>
+    <a class="btn-contacto" href="tel:+50493830959">9383-0959</a>
+  </div>
+  <div class="card-bomba">
+    <img src="lavado.jpg" alt="Café Lavado">
+    <b>Lavado</b>
+    <a class="btn-contacto" href="tel:+50493830959">9383-0959</a>
+  </div>
+  <div class="card-bomba">
+    <img src="pergamino.jpg" alt="Pergamino Seco">
+    <b>Pergamino Seco</b>
+    <a class="btn-contacto" href="tel:+50493830959">9383-0959</a>
+  </div>
+</div>
 
   </div>
  <div style="width:100%; display:flex; justify-content:center; margin: 50px 0 40px 0;">
