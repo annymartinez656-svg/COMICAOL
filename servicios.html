@@ -120,6 +120,23 @@ body{font-family:'Poppins',sans-serif;background:#fdf8f0;padding:15px}
     padding: 18px;
     font-size: 20px;
   }
+	/* FIX PARA QUE NO SE CORTE EN CELULAR */
+.tarjeta, .proceso-cafe{
+  max-width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+.lista-maq, .lista-proceso{
+  display: flex !important;
+  flex-wrap: wrap !important; /* para que baje a la siguiente fila */
+  justify-content: center !important;
+  gap: 12px !important;
+  max-width: 100% !important;
+}
+.item-maq{
+  max-width: 140px !important;
+  flex: 1 1 140px !important;
+}
 </style>
 </head>
 <body>
