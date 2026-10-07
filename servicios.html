@@ -81,52 +81,45 @@ body{font-family:'Poppins',sans-serif;background:#fdf8f0;padding:15px}
   background:#f9f9f3;
 }
 
-/* MAQUINARIA */
-.lista-maq{display:flex;flex-direction:column;gap:15px}
-.item-maq{
-  display:grid;
-  grid-template-columns:130px 1fr 130px;
-  gap:12px;
-  align-items:center;
-}
-.item-maq .foto{
-  border:2px solid #222;
-  border-radius:12px;
-  height:100px;
-  background:#eee;
-  overflow:hidden;
-}
-.item-maq .foto img{width:100%;height:100%;object-fit:cover}
-.item-maq .desc{
-  border:2px solid #222;
-  border-radius:12px;
-  padding:12px;
-  min-height:100px;
-  font-size:.9rem;
-}
-.item-maq .contacto{
-  border:2px solid #222;
-  border-radius:12px;
-  padding:10px;
-  text-align:center;
-  font-size:.8rem;
-  font-weight:700;
-}
-.item-maq .contacto span{
-  display:block;
-  background:#f2f2f2;
-  border:1.5px solid #222;
-  border-radius:20px;
-  padding:6px;
-  margin-top:6px;
-}
-
-@media(max-width:650px){
-  .proceso-grid{grid-template-columns:1fr 1fr}
-  .item-cafe{grid-template-columns:110px 1fr}
-  .item-maq{grid-template-columns:90px 1fr}
-  .item-maq .contacto{grid-column:1 / -1}
-}
+/* SECCION TIPOS */
+  .seccion-cafe{
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .seccion-cafe h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .contenedor-tarjetas{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .tarjeta{
+    background: white;
+    width: 300px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border: 2px solid #D9B18E; /* borde piel */
+    transition: transform 0.2s;
+  }
+  .tarjeta:hover{
+    transform: translateY(-5px);
+  }
+  .tarjeta img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #F5EFE6; /* mientras cargas tu foto */
+  }
+  .tarjeta h3{
+    padding: 18px;
+    font-size: 20px;
+  }
 </style>
 </head>
 <body>
