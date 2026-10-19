@@ -228,6 +228,52 @@
     width:100%; height:60px; border-radius:20px; margin-bottom:10px;
   }
 }
+  /* ARREGLO PARA LAPTOP - QUE NO SE ENCIME */
+@media (min-width: 769px) {
+  /* Quitamos el circulo punteado */
+  .ciclo::before, .ciclo::after,
+  .circulo-punteado {
+    display: none !important;
+  }
+
+  /* Hacemos que el contenedor sea en cuadricula */
+  .ciclo, 
+  .contenedor-ciclo,
+  .comicaol-ciclo {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px 20px !important;
+    padding: 40px 20px !important;
+    place-items: start center !important;
+  }
+
+  /* Cada item deja de estar flotando */
+  .ciclo > div,
+  .ciclo > a,
+  .item-historia,
+  .item-mision,
+  .item-servicios,
+  .item-marca,
+  .item-equipo,
+  .item-comites {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 auto !important;
+  }
+  
+  /* El boton del centro que dice MI EMPRESA */
+  .ciclo .centro,
+  .ciclo .mi-empresa {
+    grid-column: 1 / span 3 !important;
+    order: 10;
+    margin-top: 30px !important;
+  }
+}
 </style>
 
 
