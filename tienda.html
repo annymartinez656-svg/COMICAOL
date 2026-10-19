@@ -48,6 +48,9 @@ header{background:linear-gradient(135deg,#1a5d1a,#2e8b57);color:#fff;padding:16p
 <body>
 
 <header>
+   <h1>COMICAOL Tienda</h1>
+  <div class="cart-icon" onclick="verCarrito()">🛒 <span id="contador">0</span></div>
+</header>
   <div class="hero">
   <h2>¿Qué tipo de café quieres?</h2>
   <p>Elige tu preparación arriba y tu grano abajo</p>
@@ -60,10 +63,6 @@ header{background:linear-gradient(135deg,#1a5d1a,#2e8b57);color:#fff;padding:16p
   <div class="producto"><div class="prod-img" onclick="this.querySelector('img').classList.toggle('zoom')"><img src="cafe2.jpg"></div><div class="info"><h4>2.Cafe en grano</h4><div class="precio">150.00 Lps</div><button class="btn-add" onclick="agregar('Cafe en grano',150)">Agregar</button></div></div>
   <div class="producto"><div class="prod-img" onclick="this.querySelector('img').classList.toggle('zoom')"><img src="cafe3.jpg"></div><div class="info"><h4>3.Cafe manos de mujer</h4><div class="precio">200.00 Lps</div><button class="btn-add" onclick="agregar('cafe manos de mujer',200)">Agregar</button></div></div>
 </div>
-
-  <h1>COMICAOL Tienda</h1>
-  <div class="cart-icon" onclick="verCarrito()">🛒 <span id="contador">0</span></div>
-</header>
 
 <div class="hero">
   <h2>¿Qué tipo de café quieres?</h2>
