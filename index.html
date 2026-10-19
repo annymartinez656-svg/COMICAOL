@@ -186,65 +186,47 @@
          <img src="hitoriaoficial.jpeg" class="imagen-redonda" alt="Café COMICAOL">
 
     </section>
-  
-  <section class="ciclo-comicaol-6">
-  <h2>MI EMPRESA, TU EMPRESA ☕</h2>
+  <section class="ciclo-comicaol">
+  <h2 style="text-align:center;">MI EMPRESA, TU EMPRESA ☕</h2>
   
   <div class="circulo">
-    <a href="#historia" class="item i1"><div class="foto"><img src="historia.jpg"></div>HISTORIA<h3>Nuestros origenes y legado cafetalero desde 1996.</h3></a>
-    <a href="#mision" class="item i2"><div class="foto"><img src="mision.jpg"></div>MISION Y VISION<h3></h3></a>
-    <a href="#servicios" class="item i3"><div class="foto"><img src="servicios.jpg"></div>SERVICIOS<h3>Asistencia tecnica, beneficio y acopio de cafe.</h3></a>
-    <a href="#marca" class="item i4"><div class="foto"><img src="marca.jpg"></div>MARCA INSIGNIA<h3>Cafe de calidad.</h3></a>
-    <a href="#equipo" class="item i5"><div class="foto"><img src="equipo.jpg"></div>NUESTRO EQUIPO<h3>Familias productoras unidas y comprometidas.</h3></a>
-    <a href="#comites" class="item i6"><div class="foto"><img src="comites.jpg"></div>COMITES<h3></h3></a>
-    <div class="centro"><br>COMICAOL<small></small></div>
+    <a href="#historia" class="item i1"><div class="foto"><img src="historia.jpg"></div><span>HISTORIA</span></a>
+    <a href="#mision" class="item i2"><div class="foto"><img src="mision.jpg"></div><span>MISION Y VISION</span></a>
+    <a href="#servicios" class="item i3"><div class="foto"><img src="servicios.jpg"></div><span>SERVICIOS</span></a>
+    <a href="#marca" class="item i4"><div class="foto"><img src="marca.jpg"></div><span>MARCA INSIGNIA</span></a>
+    <a href="#equipo" class="item i5"><div class="foto"><img src="equipo.jpg"></div><span>NUESTRO EQUIPO</span></a>
+    <a href="#comites" class="item i6"><div class="foto"><img src="comites.jpg"></div><span>COMITES</span></a>
+    <div class="centro">COMICAOL</div>
   </div>
 </section>
 
 <style>
-.ciclo-comicaol-6{font-family:Arial; text-align:center; background:#fdf6e9; padding:15px; overflow:hidden;}
-.ciclo-comicaol-6 h2{font-size:18px; color:#3e2723;}
+.ciclo-comicaol{font-family:Arial; background:#fdf6e9; padding:20px;}
+.circulo{position:relative; width:500px; height:500px; margin:40px auto; border:2px dashed #c9a77d; border-radius:50%;}
+.item{position:absolute; width:100px; text-align:center; text-decoration:none; color:#3e2723;}
+.item .foto{width:80px; height:80px; border-radius:50%; border:3px solid #795548; margin:0 auto; background:#fff; overflow:hidden;}
+.item .foto img{width:100%; height:100%; object-fit:cover;}
+.item span{font-size:11px; font-weight:bold; display:block; margin-top:5px;}
+.i1{top:-25px; left:50%; transform:translateX(-50%);}
+.i2{top:10%; right:0;}
+.i3{top:50%; right:-20px; transform:translateY(-50%);}
+.i4{bottom:-25px; left:50%; transform:translateX(-50%);}
+.i5{top:50%; left:-20px; transform:translateY(-50%);}
+.i6{top:10%; left:0;}
+.centro{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:100px; height:100px; background:#fff; border:2px solid #3e2723; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#795548;}
 
-.circulo{
-  position:relative;
-  width:90vw; /* 90% del ancho del celular */
-  max-width:500px;
-  aspect-ratio:1/1; /* siempre cuadrado */
-  margin:30px auto;
-  border:2px dashed #c9a77d;
-  border-radius:50%;
-}
-.item{position:absolute; text-decoration:none; color:#3e2723; width:95px; text-align:center;}
-.item .foto{
-  width:70px; height:70px;
-  border-radius:50%; border:3px solid #795548;
-  overflow:hidden; margin:0 auto; background:white;
-}
-.item .foto img{width:100%; height:100%; object-fit:cover; display:block;}
-.item h3{font-size:11px; margin-top:5px; line-height:1.1;}
-.item p{font-size:9px; line-height:1.1; margin:2px;}
-
-.i1{top:-10px; left:50%; transform:translateX(-50%);}
-.i2{top:15%; right:-5%;}
-.i3{top:50%; right:-15%; transform:translateY(-50%);}
-.i4{bottom:-10px; left:50%; transform:translateX(-50%);}
-.i5{top:50%; left:-15%; transform:translateY(-50%);}
-.i6{top:15%; left:-5%;}
-
-.centro{
-  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-  background:#fff; border:2px solid #3e2723; border-radius:50%;
-  width:90px; height:90px; display:flex; flex-direction:column;
-  justify-content:center; font-weight:bold; color:#795548; font-size:14px;
-}
-
-/* Para celular pequeño, hacemos el círculo más pequeño */
-@media(max-width:380px){
-  .circulo{width:85vw;}
-  .item{width:80px;}
-  .item .foto{width:55px; height:55px;}
-  .item h3{font-size:9px;}
-  .centro{width:70px; height:70px; font-size:11px;}
+/* === ESTO ARREGLA EL CELULAR === */
+@media(max-width:700px){
+  .circulo{
+    width:100%; height:auto; border:none; border-radius:0;
+    display:grid; grid-template-columns:1fr 1fr; gap:15px;
+  }
+  .item{position:static; width:100%; transform:none !important;}
+  .item .foto{width:70px; height:70px;}
+  .centro{
+    position:static; transform:none; grid-column:1 / span 2;
+    width:100%; height:60px; border-radius:20px; margin-bottom:10px;
+  }
 }
 </style>
 
