@@ -2,7 +2,7 @@
 body { 
   background-color: #FFFBF2;
   background-image: 
-    linear-gradient(rgba(255,251,242,0.88), rgba(255,251,242,0.88)),
+    linear-gradient(rgba(255,251,242,0.55), rgba(255,251,242,0.55)),
     url('fondo-cafetal.jpeg');
   background-size: cover;
   background-position: center;
