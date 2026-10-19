@@ -3,7 +3,7 @@ body {
   background-color: #FFFBF2;
   background-image: 
     linear-gradient(rgba(255,251,242,0.88), rgba(255,251,242,0.88)),
-    url('fondo-cafetal.jpg');
+    url('fondo-cafetal.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
