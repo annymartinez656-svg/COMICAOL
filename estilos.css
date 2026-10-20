@@ -51,9 +51,10 @@ section { padding: 40px 20px; max-width: 1000px; margin: auto; }
 .contacto p { margin: 8px 0; }
 
 /* PIE DE PAGINA */
-.pie-negro { background: #000000 !important; color: white !important; text-align: center; padding: 15px; }
-.pie-negro a { color: white !important; text-decoration: none; font-weight: bold; margin: 0 10px; }
-
+.pie-negro { background: #000000 !important; color: white !important; text-align: center; padding: 15px; 
+width: 100% !important; display: block !important; box-sizing: border-box;
+}
+            
 /* CELULAR */
 @media (max-width: 768px) {
   header h1 { font-size: 13px; }
