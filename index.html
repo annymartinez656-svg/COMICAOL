@@ -200,6 +200,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow-x: hidden;
     }
 
     .ciclo-comicaol h2 {
@@ -210,6 +211,7 @@
       text-align: center;
     }
 
+    /* Contenedor principal de la órbita (Computadora) */
     .contenedor-ciclo {
       position: relative;
       width: 560px;
@@ -248,7 +250,7 @@
     }
 
     .tarjeta-central-servicios .titulo-servicios {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       letter-spacing: 1.5px;
       margin-bottom: 8px;
@@ -343,49 +345,50 @@
       to { transform: rotate(-360deg); }
     }
 
-    /* === ADAPTACIÓN MÓVIL === */
-    @media (max-width: 700px) {
+    /* === ADAPTACIÓN MÓVIL (Mantiene la misma órbita pero escalada a menor tamaño) === */
+    @media (max-width: 600px) {
       .contenedor-ciclo {
-        width: 100%;
-        height: auto;
-        border: none;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        width: 340px;
+        height: 340px;
+        margin: 10px auto;
       }
 
       .tarjeta-central-servicios {
-        position: static;
-        transform: none;
-        width: 100%;
-        height: auto;
-        padding: 20px;
+        width: 115px;
+        height: 155px;
+        padding: 10px;
       }
 
-      .circulo-orbita {
-        position: static;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        animation: none;
-      }
+      .tarjeta-central-servicios .icono-servicios { font-size: 22px; margin-bottom: 4px; }
+      .tarjeta-central-servicios .titulo-servicios { font-size: 11px; margin-bottom: 3px; }
+      .tarjeta-central-servicios .desc-servicios { font-size: 7.5px; }
 
       .item {
-        position: static !important;
-        width: 100%;
-        background: #fff;
-        padding: 12px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        box-sizing: border-box;
-        animation: none !important;
+        width: 80px;
       }
 
       .item .foto {
-        width: 55px;
-        height: 55px;
+        width: 42px;
+        height: 42px;
+        border-width: 2px;
+        font-size: 16px;
       }
+
+      .item span {
+        font-size: 8px;
+      }
+
+      .item p {
+        font-size: 7px;
+      }
+
+      /* Ajuste de posiciones para el tamaño reducido en celular */
+      .i1 { top: -22px; }
+      .i2 { top: 10%; right: -12px; }
+      .i3 { bottom: 10%; right: -12px; }
+      .i4 { bottom: -22px; }
+      .i5 { bottom: 10%; left: -12px; }
+      .i6 { top: 10%; left: -12px; }
     }
   </style>
 </head>
@@ -440,8 +443,8 @@
         <p>Familias unidas</p>
       </a>
 
-      <!-- 6. Valores / Extra -->
-      <a href="#valores" class="item i6">
+      <!-- 6. Servicios / Extra -->
+      <a href="#servicios" class="item i6">
         <div class="foto">👩‍💻</div>
         <span>SERVICIOS</span>
         <p>Compromiso y unión</p>
@@ -450,6 +453,10 @@
     </div>
   </div>
 </section>
+
+</body>
+</html>
+
 
 </body>
 </html>
