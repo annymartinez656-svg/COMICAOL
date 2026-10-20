@@ -93,3 +93,27 @@ nav a:hover{
   color: white !important;
   border-color: #7bb342 !important;
 }
+
+/* ARREGLO PARA QUE EL CICLO NO TAPE EL LOGO NI EL PIE */
+.ciclo, .circle, .círculo, .diagrama {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  margin: 20px auto !important;
+  z-index: 1 !important;
+}
+
+.logo-central img, .logo img {
+  position: relative !important;
+  z-index: 5 !important;
+  margin-top: 40px !important;
+  display: block;
+}
+
+footer, .pie, .footer {
+  position: relative !important;
+  z-index: 10 !important;
+  margin-top: 60px !important;
+  clear: both !important;
+}
