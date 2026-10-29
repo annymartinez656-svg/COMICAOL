@@ -106,14 +106,14 @@ nav a:hover{
 }
 /* En celular queda como está ahora */
 header h1 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 /* Solo en computadora se hace más grande y negrita */
 @media (min-width: 768px) {
   header h1 {
-    font-size: 26px !important; /* si lo querés más grande aún, ponele 26px o 28px */
+    font-size: 28px !important; /* si lo querés más grande aún, ponele 26px o 28px */
     font-weight: 900 !important;
   }
 }
