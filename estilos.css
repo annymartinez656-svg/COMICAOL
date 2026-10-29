@@ -104,4 +104,16 @@ nav a:hover{
   color: white !important;
   border-color: #7bb342 !important;
 }
+/* En celular queda como está */
+.titulo-cooperativa {
+  font-weight: normal;
+}
 
+/* Solo en computadora se hace grande y negrita */
+@media (min-width: 768px) {
+  .titulo-cooperativa {
+    font-size: 22px !important; /* más grande, si lo querés más grande poné 24px o 26px */
+    font-weight: 900 !important; /* negrita bien marcada */
+    letter-spacing: 0.5px;
+  }
+}
