@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>contacto - COMICAOL</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  body{ font-family:Arial; background:#D5E8d4; margin:0; padding:20px; display:block; }
+
+  .contenedor-boton{ position: fixed; bottom: 30px; left: 0; width: 100%; display: flex; justify-content: center; z-index: 10; }
+  .btn-volver{ background: white; color: #333; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+  /* TARJETITAS BONITAS CON ANIMACION */
+  .galeria{
+    max-width: 1000px;
+    margin: 30px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .tarjeta-img{
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    animation: aparecer 0.6s ease forwards;
+  }
+  .tarjeta-img:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
+  .tarjeta-img img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .tarjeta-img:hover img{
+    transform: scale(1.1);
+  }
+
+  @keyframes aparecer{
+    from{ opacity: 0; transform: translateY(20px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+  
+  .tarjeta-img:nth-child(1){ animation-delay: 0.1s; }
+  .tarjeta-img:nth-child(2){ animation-delay: 0.2s; }
+  .tarjeta-img:nth-child(3){ animation-delay: 0.3s; }
+  .tarjeta-img:nth-child(4){ animation-delay: 0.4s; }
+  .tarjeta-img:nth-child(5){ animation-delay: 0.5s; }
+  .tarjeta-img:nth-child(6){ animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<!-- MERCADO ARRIBA -->
+<section style="background: #f8fbf8; padding: 50px 20px; margin: 20px auto; max-width: 900px; border-radius: 15px; text-align: center;">
+  <h2 style="color: #1a5d1a; font-weight: 800; font-size: 28px; margin-bottom: 20px;">Mercado</h2>
+  <div style="width: 80px; height: 4px; background: #2e8b57; margin: 0 auto 25px; border-radius: 2px;"></div>
+  <p style="font-size: 18px; line-height: 1.8; color: #333; text-align: justify; text-align-last: center;">
+    En <strong style="color: #1a5d1a;">COMICAOL</strong> catamos cada lote para garantizar su calidad y distinguir las características únicas de nuestras variedades: <strong>Parainema, Pacamara, Lempira, Café 90 y Café Ovata.</strong> ☕🌱
+    <br><br>
+    Nuestros cafés alcanzan puntuaciones desde <span style="background: #1a5d1a; color: white; padding: 2px 10px; border-radius: 15px; font-weight: bold;">84 puntos en taza</span>, reflejando su calidad y atributos sensoriales. Ademas, ofrecemos diferentes perfiles de taza adaptados a los gustos y preferencias de cada comprador, resaltando la esencia y el potencial de nuestro cafe.
+  </p>
+</section>
+
+<!-- GALERIA ABAJO - SOLO IMAGENES EN TARJETITAS -->
+<div class="galeria">
+  
+  <div class="tarjeta-img">
+    <img src="c:\Users\USERS\Desktop\COMICAOL\CATACIONMOLIDO.jpeg" alt="Foto 1">
+  </div>
+
+  <div class="tarjeta-img">
+    <img src="c:\Users\USERS\Desktop\COMICAOL\MOLIDO1.jpeg" alt="Foto 2">
+  </div>
+
+  <div class="tarjeta-img">
+    <img src="c:\Users\USERS\Desktop\COMICAOL\MOLIDO2.jpeg" alt="Foto 3">
+  </div>
+
+  <div class="tarjeta-img">
+    <img src="c:\Users\USERS\Desktop\COMICAOL\MOLIDO4.jpeg" alt="Foto 4">
+  </div>
+
+  <div class="tarjeta-img">
+    <img src="c:\Users\USERS\Desktop\COMICAOL\MOLIDO5.jpeg" alt="Foto 4">
+  </div>
+
+  <div class="tarjeta-img">
+    <img src="c:\Users\USERS\Desktop\COMICAOL\MOLIDO3.jpeg" alt="Foto 4">
+  </div>
+
+
+</div>
+  
+<div class="contenedor-boton">
+  <a href="index.html" class="btn-volver">Volver al inicio</a>
+</div>
+
+</body>
+</html>
