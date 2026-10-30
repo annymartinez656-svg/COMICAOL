@@ -117,3 +117,11 @@ header h1 {
     font-weight: 900 !important;
   }
 }
+
+a[href*="HISTORIA"], a[href*="SERVICIOS"], a[href*="MARCA"], a[href*="EQUIPO"], a[href*="COMITES"], a[href*="TIENDA"], a[href*="COMPRAS"], a[href*="CONTACTO"], a[href*="MERCADO"] {
+  font-weight: bold !important;
+}
+
+
+
+
